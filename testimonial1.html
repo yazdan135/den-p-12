@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" type="image/x-icon" href="icons8-dental-64.png">
+    <meta content="It consists of the study, diagnosis, prevention, management, and treatment of diseases, disorders, and conditions of the mouth, most commonly focused on dentition (the development and arrangement of teeth) as well as the oral mucosa." name="description">
+    <meta content="The highest-paying dental specialty is oral and maxillofacial surgery. On average, dentists practicing in this specialty $336,000. Oral and maxillofacial surgeons treat injuries and head, neck, face, and jaw diseases." name="keywords">
+
+    <title>BELLEVILLE DENTAL</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Start     -->
+    <nav class="navbar navbar-expand-lg  sticky-sm-top">
+        <div class="container">
+            <img class="logo" src="https://img.icons8.com/?size=64&id=TAFmwEhdVtt7&format=png  "  class="float-end icon1" alt="BELLEVILLE DENTAL">  
+            <h7 class="b1">Bellevile Dental Care</h7>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctor.html">Doctors</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="testimonial1.html">Testimonial</a>
+              </li>
+            </li>
+             <li class="nav-item">
+               <a href="appoinment.html"> <button class="btn btn-primary" type="submit">Appointment</button></a>
+              </li>
+              <br><br>
+
+             <br> <img class="nav-item eye2" src="https://img.icons8.com/?size=48&id=13758&format=png" alt="">
+
+             <div class="container">
+                
+                <p id="visitor-count eye eye1"> <span id="count">0</span></p>
+                
+                
+               
+            </div>
+            
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    // Initialize visitor count and update count on page load
+                    let visitorCount = parseInt(localStorage.getItem('visitorCount')) || 0;
+                    $('#count').text(visitorCount);
+            
+                    // Increment visitor count
+                    visitorCount++;
+                    localStorage.setItem('visitorCount', visitorCount);
+                    $('#count').text(visitorCount);
+            
+                    // Function to fetch and display visitor's location using Geolocation API
+                    function getLocation() {
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(function (position) {
+                                const latitude = position.coords.latitude;
+                                const longitude = position.coords.longitude;
+                                $('#location').text(`Latitude: ${latitude}, Longitude: ${longitude}`);
+                            }, function (error) {
+                                $('#location').text('Location not available');
+                            });
+                        } else {
+                            $('#location').text('Geolocation not supported');
+                        }
+                    }
+            
+                    // Bind the function to the button click event
+                    $('#getLocationBtn').click(getLocation);
+            
+                    // Update current date and time every second
+                    function updateDateTime() {
+                        const now = new Date();
+                        const formattedDateTime = now.toLocaleString();
+                        $('#current-time').text(formattedDateTime);
+                    }
+            
+                    // Initial call to updateDateTime
+                    updateDateTime();
+            
+                    // Update date and time every second
+                    setInterval(updateDateTime, 1000);
+                });
+            </script>
+              
+
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+  
+<!-- Header End -->
+
+    
+
+    <h1 class="f1">FEEDBACKS!</h1>
+    <section id="blog" class="blog  mx-4 my-5">
+        <div class="blog-author d-flex align-items-center">
+
+            
+
+            <img class="m" src="testiminol 1.jpg" alt="">
+            <div class="px-5">
+                <h4>George</h4>
+                <p>
+                    " After my first session with Will I was very happy that I chose him. Will was very easy to talk to
+                    and made me feel comfortable. I trusted him with everything I said and never felt pressured while
+                    with him. He taught me the most valuable piece of information  that I am in control of my life."
+                </p>
+            </div>
+        </div>
+
+
+        <div class="blog-author d-flex align-items-center  d-flex flex-row-reverse ">
+            <img class="m" src="testiminol 2.jpg" alt="">
+            <div class="px-5" >
+                <h4>Hary James</h4>
+                <p>
+                    " I was quite surprised that the admission procedure as well as the treatment during the whole
+                    process were
+                    perfect, there was not a hospital where I had witnessed the doctor's warm face and care.."
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-author d-flex align-items-center">
+            <img class="m" src="testiminol 5.jpg" alt="">
+
+            <div  class="px-5" >
+                <h4>Doutzen Kroes</h4>
+                <p>
+                    " I am very fortunate that I was able to completely cure my shoulder pain early, thank you very much
+                    to the
+                    medical team."
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-author d-flex align-items-center    d-flex flex-row-reverse">
+            <img class="m" src="testiminol 4.jpg" alt="">
+            <div class="px-5" >
+                <h4>Andy Loid</h4>
+                <p>
+                    " My family is very grateful to the doctors in the department. With the encouragement and treatment
+                    of the
+                    doctors, my grandfather's back pain was completely relieved. We are truly touched and grateful."
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-author d-flex align-items-center">
+            <img class="m" src="testiminol 3.jpg" alt="">
+            <div class="px-5" >
+                <h4> lillly Jean </h4>
+                <p>
+                    " I am very satisfied with the facilities and the doctors here. Very comfortable and attentive."
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Start  -->
+<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="logo" src="https://img.icons8.com/?size=64&id=TAFmwEhdVtt7&format=png" alt="">
+                    <h4>Belleville Dental</h4>
+                    <p>Enter your email to receive more information</p>
+                </div>
+                <div class="col-lg-6">
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit" value="Get email">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="home.html">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="about.html">About </a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="doctor.html">Doctors</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="testimonial1.html">Testimonial</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="appoinment.html">Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="doctor.html">Orthodontics</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="doctor.html">Dental implant</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="doctor.html">Prosthodontics</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="doctor.html">Periodontics</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="doctor.html">Endodontics</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="doctor.html">Invisalign</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                        240 Madison Avenue, <br>
+                        12th Floor, New York, NY, 10016<br>
+                        United States <br><br>
+                        <strong>Phone:</strong> +212-685-2890<br>
+                        <strong>Email:</strong> bellevilledental178@gmail.com<br>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <h3>About Belleville</h3>
+                    <p>Welcome to Belleville Dental, your online destination for dental care excellence. Discover a world of smiles within our website, where information meets convenience. Explore our range of services, meet our dedicated team, and access valuable resources to guide you on your oral health journey. Your radiant smile starts here, at Belleville Dental, your go-to source for a healthier, happier you.</p>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div>
+                    <h4 id="count"></h4>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Belleville Dental</span></strong>. All Rights Reserved
+                    <div class="container">
+                
+                        <p id="location-info">Location: <span id="location">Loading...</span></p>
+                        <p id="date-time">Current Date and Time: <span id="current-time">Loading...</span></p>
+                        <button id="getLocationBtn">Get My Location</button>
+                    </div>
+                    
+                    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            // Initialize visitor count and update count on page load
+                            let visitorCount = parseInt(localStorage.getItem('visitorCount')) || 0;
+                            $('#count').text(visitorCount);
+                    
+                            // Increment visitor count
+                            visitorCount++;
+                            localStorage.setItem('visitorCount', visitorCount);
+                            $('#count').text(visitorCount);
+                    
+                            // Function to fetch and display visitor's location using Geolocation API
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(function (position) {
+                                        const latitude = position.coords.latitude;
+                                        const longitude = position.coords.longitude;
+                                        $('#location').text(`Latitude: ${latitude}, Longitude: ${longitude}`);
+                                    }, function (error) {
+                                        $('#location').text('Location not available');
+                                    });
+                                } else {
+                                    $('#location').text('Geolocation not supported');
+                                }
+                            }
+                    
+                            // Bind the function to the button click event
+                            $('#getLocationBtn').click(getLocation);
+                    
+                            // Update current date and time every second
+                            function updateDateTime() {
+                                const now = new Date();
+                                const formattedDateTime = now.toLocaleString();
+                                $('#current-time').text(formattedDateTime);
+                            }
+                    
+                            // Initial call to updateDateTime
+                            updateDateTime();
+                    
+                            // Update date and time every second
+                            setInterval(updateDateTime, 1000);
+                        });
+                    </script>
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
